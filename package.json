@@ -1,6 +1,6 @@
 {
   "name": "rest-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "web component button by restnfeel",
   "main": "rest-button",
   "scripts": {
@@ -15,5 +15,8 @@
     "url": "https://github.com/restnfeel/rest-button.git"
   },
   "author": "restnfeel",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.2"
+  }
 }

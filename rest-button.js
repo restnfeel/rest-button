@@ -1,27 +1,14 @@
-export class RestButton extends HTMLElement {
+import {PolymerElement, html} from '@polymer/polymer';
+
+export class RestButton extends PolymerElement {
 
     constructor() {
         super();
-        this._initWork();
-    }
-
-    connectedCallback() {
-
-    }
-
-    disconnectedCallback() {
         
     }
 
-    _initWork() {
-        let baseTemplate = document.createElement('template');
-        baseTemplate.innerHTML = this._renderElement();
-        let shadowRoot = this.attachShadow({mode:'open'});
-        shadowRoot.appendChild(document.importNode(baseTemplate.content, true));
-    }
-
-    _renderElement() {
-        return `
+    static get template () {
+        return html `
         <style>
         </style>
         <button type="button">
